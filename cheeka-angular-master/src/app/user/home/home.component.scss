@@ -1,0 +1,138 @@
+.cheeka-container {
+    padding: 0;
+    .cheeka-carousel {
+        height: 100vh;
+        .carousel-container {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            height: 100%;
+        }
+        .carousel-container li {
+            left: 0;
+            text-align: center;
+            display: inline;
+            .carousel-image {
+                height: 100%;
+                width: 100%;
+                display: block;
+                margin: auto;
+                object-fit: cover;
+            }
+        }
+    }
+    .cheeka-section {
+        padding: 10px 5%;
+        .cheeka-service-header {
+            font-family: 'Srisakdi', cursive;
+            margin-top: -20px;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+        .card {
+            width: 100%;
+            height: auto;
+            background-color: #fff;
+            padding: 30px;
+            margin-bottom: 20px;
+            transition: .5s;
+            box-shadow: 0 0 5px gray;
+            .header {
+                text-align: center;
+                margin-bottom: 20px;
+                cursor: pointer;
+                h4 {
+                    font-family: 'Srisakdi', cursive;
+                    font-weight: bolder;
+                    text-shadow: 0 0 5px gray;
+                }
+            }
+        }
+        .card:hover {
+            background-color: #292929;
+            color: rgb(223, 219, 219);
+        }
+    }
+    .cheeka-testimonials div h1 {
+        margin-top: 30px;
+        font-family: 'Srisakdi', cursive;
+        text-align: center;
+    }
+    .cheeka-testimonials div p {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .footer {
+        font-family: 'Srisakdi', cursive;
+        text-align: right;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .testimonial .content{
+        line-height: 25px;
+        letter-spacing: 1px;
+    }
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    .fa:hover {
+        color: #a09f9f;
+    }
+    .cheeka-gallery {
+        h1 {
+            font-family: 'Srisakdi', cursive;
+            padding: 10px;
+            width: 135px;
+            margin: 0 auto;
+        }
+        margin: 30px 0px;
+        padding: 50px 5%;
+        .gallery-card {
+            background-color: #fff;
+            margin-top: 60px;
+            padding: 20px;
+            box-shadow: 0 0 10px gray;
+            .gallery-card-content {
+                transition: .3s;
+            }
+            .gallery-card-content:hover {
+                transform: scale(1.05);
+                opacity: .7;
+            }
+            .gallery-card-content img {
+                height: 100%;
+                width: 100%;
+                display: block;
+                margin: auto;
+                object-fit: contain;
+            }
+            .gallery-card-footer {
+                widows: 100%;
+                height: 60%;
+                margin-top: 20px;
+                box-sizing: border-box;
+                transition: .3s;
+                font-size: 14px;
+                text-align: center;
+                color: #a09f9f;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                // font-family: 'Srisakdi', cursive;
+            }
+        }
+        .gallery-card-footer {
+            text-align: center;
+        }
+    }
+    .section-separator {
+        margin: 0 10%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .cheeka-carousel {
+        height: 35vh !important;
+    }
+}

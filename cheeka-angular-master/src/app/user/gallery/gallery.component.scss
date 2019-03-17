@@ -1,0 +1,21 @@
+.main-container {
+    background-color: #eee;
+    padding: 10px;
+    .card {
+        width: 100%;
+        height: auto;
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+        .image-header {
+            text-align: center;
+            margin-bottom: 20px;
+            cursor: pointer;
+            img {
+                position: relative;
+                max-width: 100%;
+                font-weight: bolder;
+            }
+        }
+    }
+}

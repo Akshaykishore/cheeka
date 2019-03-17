@@ -1,0 +1,19 @@
+<app-header></app-header>
+<div class="main-container">
+    <div class="container">
+        <div class="row">
+            <div *ngFor="let g of gallery; let i = index" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="card" [routerLink]="['../', g.folder]">
+                    <div class="image-header">
+                        <img [src]="api['BASE_URL'] + '/' + g.folder + '/' + g.file" />
+                    </div>
+                    <div class="image-content">
+                        <h3>Test</h3>
+                        <p>Test</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

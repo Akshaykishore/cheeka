@@ -1,0 +1,130 @@
+.header {
+    padding: 0 10px 10px 10px;
+    height: 60px;
+    outline: none;
+    border-radius: 0 !important;
+    margin-bottom: 0px;
+    font-family: 'Thasadith', sans-serif;
+    text-align: center;
+    box-shadow: 0 0 5px gray;
+    .navbar-brand,
+    .navbar-nav li a,
+    button {
+        position: relative;
+        text-align: center;
+        line-height: 50px;
+        height: 60px;
+        text-decoration: none;
+        color: gray;
+        transition: .5s;
+        padding: 5px 30px;
+        letter-spacing: 1px;
+        margin: 0px;
+        font-weight: bolder;
+    }
+    .navbar-nav li a:hover {
+        background-color: #fff;
+        text-shadow: 0 0 5px gray;
+        color: #000;
+        cursor: pointer;
+    }
+    .navbar-nav li a:before {
+        content: '';
+        position: absolute;
+        bottom: 20px;
+        left: 24px;
+        width: 12px;
+        height: 12px;
+        border: 3px solid #e91e63;
+        border-width: 0 0 1px 1px;
+        transition: .5s;
+        opacity: 0;
+    }
+    .navbar-nav li a:hover:before {
+        bottom: 12px;
+        left: 12px;
+        opacity: 1;
+    }
+    .navbar-nav li a:after {
+        content: '';
+        position: absolute;
+        top: 20px;
+        right: 24px;
+        width: 12px;
+        height: 12px;
+        border: 3px solid #e91e63;
+        border-width: 1px 1px 0 0;
+        transition: .5s;
+        opacity: 0;
+    }
+    .navbar-nav li a:hover:after {
+        top: 12px;
+        right: 12px;
+        opacity: 1;
+    }
+    .navbar-nav li:focus {
+        outline: none;
+    }
+    .collapse-button {
+        position: absolute;
+        right: 0;
+    }
+    .brand-image img {
+        background: #fff;
+        position: relative;
+        border-radius: 50%;
+        padding: 20px;
+        max-height: 120px;
+        max-width: 120px;
+        transition: .5s;
+    }
+    .brand-image:hover {
+        border: none !important;
+    }
+    .brand-image:after {
+        content: '';
+        border: 3px solid #fff !important;
+    }
+    .brand-image:before {
+        content: '';
+        border: 3px solid #fff !important;
+    }
+    .icon-bar {
+        background-color: black;
+    }
+    .image-sm {
+        display: none;
+    }
+    .custom-nav {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        height: auto;
+        padding: 0px;
+        .navbar-nav li a {
+            height: 50px;
+            line-height: 50px;
+        }
+        .image-sm {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .center-image {
+        display: none;
+    }
+    .custom-nav {
+        width: unset !important;
+        flex: unset;
+        display: block !important;
+        align-items: unset;
+        justify-content: unset;
+    }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "cheeka-node",
+  "version": "1.0.0",
+  "description": "Backend for Cheeka",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "Cheeka",
+    "Studio",
+    "Cheeka",
+    "Photography"
+  ],
+  "author": "Sethuraman Srinivasan",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "get-json": "^1.0.1",
+    "http": "^0.0.0",
+    "multer": "^1.4.1",
+    "nodemailer": "^5.1.1",
+    "nodemon": "^1.18.10",
+    "path": "^0.12.7",
+    "request": "^2.88.0",
+    "unzip": "^0.1.11"
+  }
+}

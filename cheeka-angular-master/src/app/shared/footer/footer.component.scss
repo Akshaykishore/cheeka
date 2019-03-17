@@ -1,0 +1,46 @@
+.cheeka-footer {
+    margin-top: 60px;
+    background-color: #fff;
+    // padding: 80px 8%;
+    .cheeka-locations-header {
+        .cheeka-locations-header-title {
+            text-transform: uppercase;
+            font-size: 18px;
+        }
+    }
+    .cheeka-locations-content p {
+        margin: 14px 0;
+    }
+}
+
+.social-links {
+    margin: 10px;
+    margin-top: 0px;
+    text-align: right;
+    .social-image {
+        height: 48px;
+        width: 48px;
+        margin-right: 12px;
+        transition: .5s;
+    }
+    .social-image:hover {
+       transform: rotateY(360deg);
+    }
+}
+
+.bg {
+    background: #f6f6f6;
+    padding: 30px;
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        width: unset;
+    }
+}

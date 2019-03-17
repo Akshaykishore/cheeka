@@ -1,0 +1,12 @@
+<app-header></app-header>
+<div class="main-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <img class="img-responsive" *ngFor="let i of images"
+          [src]="api['BASE_URL'] + '/' + folder + '/' + i" />
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
